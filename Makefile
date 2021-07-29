@@ -17,6 +17,7 @@ FLAGS = -Wall -Wextra -Werror
 FT = ft_bzero.o\
 		ft_isalnum.o\
 		ft_isalpha.o\
+		ft_isascii.o\
 		ft_isdigit.o\
 
 all: $(NAME)
