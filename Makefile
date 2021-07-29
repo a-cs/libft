@@ -14,7 +14,8 @@ NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror
 
-FT = ft_bzero.o
+FT = ft_bzero.o\
+		ft_isalpha.o
 
 all: $(NAME)
 
