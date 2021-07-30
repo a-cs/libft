@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/28 22:41:05 by acarneir          #+#    #+#             */
-/*   Updated: 2021/07/28 22:41:05 by acarneir         ###   ########.fr       */
+/*   Created: 2021/07/29 21:36:42 by acarneir          #+#    #+#             */
+/*   Updated: 2021/07/29 21:36:42 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <unistd.h>
-
-typedef struct s_list
+size_t	ft_strlen(const char *s)
 {
-	void			*content;
-	struct s_list	*next;
-}				t_list;
+	int	len;
 
-void	ft_bzero(void *s, size_t n);
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-int		ft_tolower(int c);
-int		ft_toupper(int c);
-
-#endif
+	len = 0;
+	while (*s != '\0')
+	{
+		s++;
+		len++;
+	}
+	return (len);
+}
