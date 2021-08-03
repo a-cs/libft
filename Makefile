@@ -23,6 +23,7 @@ FT = ft_atoi.o\
 		ft_isdigit.o\
 		ft_isprint.o\
 		ft_strchr.o\
+		ft_strdup.o\
 		ft_strlcat.o\
 		ft_strlcpy.o\
 		ft_strlen.o\
@@ -30,7 +31,7 @@ FT = ft_atoi.o\
 		ft_strnstr.o\
 		ft_strrchr.o\
 		ft_tolower.o\
-		ft_toupper.o\
+		ft_toupper.o
 
 all: $(NAME)
 
