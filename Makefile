@@ -26,6 +26,7 @@ FT = ft_bzero.o\
 		ft_strlcpy.o\
 		ft_strlen.o\
 		ft_strncmp.o\
+		ft_strnstr.o\
 		ft_strrchr.o\
 		ft_tolower.o\
 		ft_toupper.o\
