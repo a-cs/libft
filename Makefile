@@ -25,6 +25,7 @@ FT = ft_atoi.o\
 		ft_memchr.o\
 		ft_memcmp.o\
 		ft_memcpy.o\
+		ft_memmove.o\
 		ft_memset.o\
 		ft_strchr.o\
 		ft_strdup.o\
