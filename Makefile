@@ -22,6 +22,7 @@ FT = ft_atoi.o\
 		ft_isascii.o\
 		ft_isdigit.o\
 		ft_isprint.o\
+		ft_memchr.o\
 		ft_memcmp.o\
 		ft_memcpy.o\
 		ft_memset.o\
