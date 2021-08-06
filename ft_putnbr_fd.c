@@ -12,7 +12,20 @@
 
 #include "libft.h"
 
+static void	ft_print_nbr(char *digits, int fd)
+{
+	int	c;
 
+	if (digits[0] == '-')
+		ft_putchar_fd('-', fd);
+	c = 10;
+	while (c >= 0)
+	{
+		if (digits[c] != '\0' && digits[c] != '-')
+			ft_putchar_fd(digits[c], fd);
+		c--;
+	}
+}
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -35,13 +48,5 @@ void	ft_putnbr_fd(int n, int fd)
 		n /= 10;
 		c++;
 	}
-	if (digits[0] == '-')
-		ft_putchar_fd('-',fd);
-	c = 10;
-	while (c >= 0)
-	{
-		if (digits[c] != '\0' && digits[c] != '-')
-			ft_putchar_fd(digits[c],fd);
-		c--;
-	}
+	ft_print_nbr(digits, fd);
 }
