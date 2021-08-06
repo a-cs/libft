@@ -34,6 +34,7 @@ FT = ft_atoi.o \
 		ft_putstr_fd.o \
 		ft_strchr.o \
 		ft_strdup.o \
+		ft_striteri.o \
 		ft_strjoin.o \
 		ft_strlcat.o \
 		ft_strlcpy.o \
