@@ -38,6 +38,7 @@ FT = ft_atoi.o \
 		ft_strlcat.o \
 		ft_strlcpy.o \
 		ft_strlen.o \
+		ft_strmapi.o \
 		ft_strncmp.o \
 		ft_strnstr.o \
 		ft_strrchr.o \
