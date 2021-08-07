@@ -32,6 +32,7 @@ FT = ft_atoi.o \
 		ft_putendl_fd.o \
 		ft_putnbr_fd.o \
 		ft_putstr_fd.o \
+		ft_split.o \
 		ft_strchr.o \
 		ft_strdup.o \
 		ft_striteri.o \
