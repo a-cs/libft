@@ -43,6 +43,7 @@ FT = ft_atoi.o \
 		ft_strncmp.o \
 		ft_strnstr.o \
 		ft_strrchr.o \
+		ft_strtrim.o \
 		ft_substr.o \
 		ft_tolower.o \
 		ft_toupper.o
