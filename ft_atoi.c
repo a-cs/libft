@@ -12,31 +12,45 @@
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+static int	ft_find_start(char const *s1, char *set)
 {
 	int	pos;
 	int	start;
+
+	start = 0;
+	pos = 0;
+	while (set[pos] != '\0')
+	{
+		if (s1[start] == set[pos])
+		{
+			start++;
+			pos = 0;
+		}
+		else
+			pos++;
+	}
+	return (start);
+}
+
+int	ft_atoi(const char *str)
+{
 	int	signal;
 	int	number;
 
-	start = 0;
+	str += ft_find_start(str, " 	\t\n\r\v\f");
 	signal = 1;
-	number = 0;
-	pos = 0;
-	while (str[pos] != '\0')
+	if (*str == '+' || *str == '-')
 	{
-		if ((start == 0 && (str[pos] == '+' || str[pos] == '-'))
-			|| ft_isdigit(str[pos]) == 1)
-		{
-			start = 1;
-			if (str[pos] == '-')
-				signal = -1;
-			if (ft_isdigit(str[pos]) == 1)
-				number = number * 10 + signal * (str[pos] - '0');
-		}
-		else if (start == 1 || !(str[pos] >= 9 && str[pos] <= 13))
-			break ;
-		pos++;
+		if (*str == '-')
+			signal = -1;
+		str++;
+	}
+	number = 0;
+	while ((ft_isdigit(*str)))
+	{
+		number *= 10;
+		number += signal * (*str - '0');
+		str++;
 	}
 	return (number);
 }
