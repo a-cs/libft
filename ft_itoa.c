@@ -52,6 +52,8 @@ char	*ft_itoa(int n)
 		c++;
 	}
 	str = (char *)ft_calloc(ft_strlen(digits) + 1, sizeof(char));
+	if (!str)
+		return (NULL);
 	ft_save_str(digits, str);
 	return (str);
 }
